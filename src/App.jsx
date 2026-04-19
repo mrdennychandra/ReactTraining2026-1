@@ -1,20 +1,7 @@
-import './App.css'
-import Counter from './components/Counter';
-import Footer from './components/Footer';
-import GlobalParent from './components/GlobalParent';
-import Header from './components/Header';
-import Parent from './components/Parent';
-import ParentZustand from './components/ParentZustand';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './app/router';
+import './App.css';
 
-function App() {
-
-  return (
-    <div id='center'>
-      <Header title="Header" />
-      <ParentZustand />
-      <Footer title="Footer" />
-    </div>
-  );
+export default function App() {
+  return <RouterProvider router={router} />;
 }
-
-export default App;
