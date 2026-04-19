@@ -1,3 +1,4 @@
+import { Button } from 'primereact/button';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -10,10 +11,12 @@ function PageTwo() {
 
     return (
         <div>
-            <button
-                onClick={handleBack} >
-                Kembali ke Halaman Satu
-            </button>
+           <Button 
+        label="Kembali ke Halaman Satu" 
+        icon="pi pi-arrow-left" 
+        className="p-button-secondary"
+        onClick={handleBack} 
+      />
         </div>
     );
 }

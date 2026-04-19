@@ -1,3 +1,4 @@
+import { Button } from 'primereact/button';
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
@@ -17,11 +18,11 @@ function PageThree() {
                 </p>
             </div>
 
-            <button
+            <Button
+            label='Kembali'
+            icon="pi pi-arrow-left" 
                 onClick={() => navigate(-1)} // Kembali ke halaman sebelumnya
-            >
-                Kembali
-            </button>
+            />
         </div>
     );
 }
